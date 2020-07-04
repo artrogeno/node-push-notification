@@ -1,0 +1,28 @@
+{
+  "name": "push_notifications",
+  "version": "1.0.0",
+  "main": "src",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "service worker",
+    "push notifications"
+  ],
+  "description": "Push notifications using NodeJs and Service worker",
+  "scripts": {
+    "start": "nodemon",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "generate:keys": "web-push generate-vapid-keys"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sucrase": "^3.15.0",
+    "web-push": "^3.4.4"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
