@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push Notifications</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Push Notification</h1>
+    </header>
+    <main>
+      <section class="notification">
+        <img src="./assets/images/alert.svg" alt="Notification" />
+      </section>
+      <section class="action">
+        <button onclick="sendNotification()">
+          <span class="description">
+            Try to send new Notification
+          </span>
+          <span id="countdown"></span>
+        </button>
+      </section>
+      <section class="message">
+        <p>
+          push notification is not supported
+        </p>
+      </section>
+    </main>
+    <script src="./assets/javascript/client.js"></script>
+  </body>
+</html>
